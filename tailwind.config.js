@@ -24,7 +24,8 @@ export default {
         'thirdBgColour': '#574B63',
         'mainTextColour': '#717171',
         'secondTextColour': '#F5F5F5',
-        'mainColour': '#490E84'
+        'mainColour': '#490E84',
+        'redColor' : '#8b0000',
       },
     },
   },

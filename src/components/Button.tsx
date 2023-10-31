@@ -2,15 +2,16 @@ import c from "classnames";
 
 type ButtonProps = {
     children:string,
-    className?:string
+    className?:string,
+    onClick?: () => void;
   }
 
-export const Button = ({children, className}: ButtonProps) => {
+export const Button = ({children, className, onClick}: ButtonProps) => {
     const combinedClassName = c(
         "block mx-auto font-bold",
         className
       );
   return (
-    <button className={combinedClassName}>{children}</button>
+    <button onClick={onClick} className={combinedClassName}>{children}</button>
   )
 }
